@@ -16,9 +16,11 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="15dp"
-        android:text="Ville"
+        android:text="Marrakech"
+        android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold" />
+
 
 
     <TableLayout
@@ -38,6 +40,12 @@
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="109dp"
+                android:layout_height="109dp"
+                app:srcCompat="@drawable/clear" />
         </TableRow>
 
         <TableRow>
@@ -146,7 +154,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="LoadMap"
                 android:text="Afficher sur Map"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:layout_span="4"/>

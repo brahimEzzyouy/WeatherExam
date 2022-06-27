@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity  {
         } else {
             Location locationGPS = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
             if (locationGPS != null) {
-                 lat = locationGPS.getLatitude();
+                 lat =  locationGPS.getLatitude();
                  lon = locationGPS.getLongitude();
                String  latitude = String.valueOf(lat);
                 String longitude = String.valueOf(lon);
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity  {
                 Geocoder geocoder = new Geocoder(this, Locale.getDefault());
                 List<Address> addresses = null;
                 try {
-                    addresses = geocoder.getFromLocation(lat, lon, 1);
+                    addresses = geocoder.getFromLocation(31.63140, -7.97900, 1);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
